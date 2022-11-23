@@ -1,0 +1,67 @@
+body {
+    
+}
+
+.gradient-custom {
+    /* background: #259ad4; */
+}
+
+.login-box {
+    background: rgba(242, 240, 240, 0.8);
+    
+}
+
+.intro {
+    height: 100%;
+    padding-top: 5rem;
+    background: url(../img/fondo-paisaje.jpg);
+    /* background: #e8eaeb; */
+    color: #545050 !important;
+    height: 100% !important;
+}
+
+.logo-inicio {
+    width: 300px;
+}
+
+.bi-laptop {
+    font-size: 19rem;
+}
+
+.boton {
+    background: #e6717c;
+    color: #fff;
+    border: none;
+    transition: .3s;
+}
+
+.boton:hover {
+    background: #ea5867;    
+}
+
+.link-regresar {
+    text-decoration: none;
+    text-align: center;
+    color: #545050;
+    font-size: 1.1rem;
+    
+    transition: .2s;
+}
+
+.link-regresar:hover {
+    font-size: 1.1rem;
+    color: #e6717c;
+}
+
+@media (min-height: 300px) and (min-height: 450px) {
+    .intro {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .bi-laptop {
+        width: 200px;
+        height: 200px;
+    }
+}

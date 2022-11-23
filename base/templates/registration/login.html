@@ -1,0 +1,78 @@
+{% extends 'partials/body.html' %}
+{% load static %}
+
+
+
+{% block contenido %} 
+
+<!-- toast -->
+{% include 'partials/messages.html' %}
+
+
+<!-- end toast -->
+
+
+<section class="intro">
+    <div class="mask d-flex align-items-center h-90 gradient-custom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-xl-10">
+                    <div class="card  login-box">
+                        <div class="card-body p-5">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-6 col-xl-7">
+                                    <div class="text-center pt-md-5 pb-5 my-md-5">
+                                        <img class="logo-inicio" src="{% static 'img/logoSML.svg' %}" alt="Logo de la empresa" />
+                                    </div>
+                                </div>
+                                
+                                <form method="POST" class="col-md-6 col-xl-4 text center ">
+
+                                    {% csrf_token %}
+                                    <div>
+                                        <h2 class="fw-bold-md-4 pb-2 text-center">Iniciar Sesión</h2>
+                                        <div class="form-outline mb-3">
+                                            <input type="text" id="usuario" name="username" class="form-control form-control-lg">
+                                            
+                                            <label for="usuario" class="form-label">Usuario</label>
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <input type="password" id="clave" name="password" class="form-control form-control-lg">
+                                          
+                                            <label for="clave" class="form-label">Clave</label>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <input type="submit" class="w-100 btn-lg mb-4 boton" value="Ingresar" />
+                                            <!-- <a href="{% url 'familiar' %}">
+                                                <button type="submit" class="w-100 btn-lg mb-4 boton">Ingresar</button><br>
+                                            </a> -->
+                                            
+                                            <i class="far fa-hand-point-left fs-3" style="color:#7a7a7a"></i><a href="{% url 'inicio' %}" class="link-regresar">   Regresar a Inicio</a>
+                                        </div>
+                                        <div class="text-center mt-5">
+                                            <a href="{% url 'password_reset' %}">¿Olvidó su contraseña?</a>
+                                        </div>
+
+                                    </div>                           
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <script type="text/javascript">
+    toastr.{ { message.tags } } ("{{ message }}");
+</script> -->
+
+
+{% endblock contenido %}
+
+
+
+
+

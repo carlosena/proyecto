@@ -1,0 +1,44 @@
+{% extends 'partials/app.html' %}
+{% load static %}
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %}
+
+    <!-- nav-bar app-->
+<section id="interface">
+
+    <div class="navigation">
+        <div class="n1">
+            <div>
+                <i id="menu-btn" class="fas fa-bars"></i>
+            </div>
+            <div class="btn salir"><i class="far fa-times-circle"></i></i>
+                <a href="{% url 'inicioSesion' %}">Cerrar Sesión</a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <i class="far fa-bell"></i>
+            <img src="{% static 'img/enfermera1.png' %}" alt="Foto usuario activo" />
+        </div>
+
+    </div>
+
+    <!-- titulo dashboard -->
+    <h3 class="i-name">
+        {{titulo}}
+    </h3>
+
+    <!-- fila de 4 cajas -->
+    
+
+
+    <!-- contenido -->
+<div class="container">
+    <img src="{% static 'img/construccion.jpg' %}" style="width:80%" alt="">
+</div>
+    
+
+</section>
+
+{% endblock contenido %} 

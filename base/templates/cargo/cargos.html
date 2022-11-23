@@ -1,0 +1,105 @@
+{% extends 'partials/app.html' %} 
+{% load static %} 
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %} 
+<!-- nav-bar app-->
+        <section id="interface">
+            {% include 'partials/nav-app.html' %}
+
+
+
+  <!-- formulario -->
+            <div class="board">
+                {% if request.user.username == 'virginia' or request.user.username == 'admin' %} 
+                <table id="example" class="table table-striped tabla-datos" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th></th>
+                            <th></th>                        
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for cargo in cargos %}
+                            <tr>
+
+                                <td class="people">
+                                    <img src="{% static 'img/cargo.png' %}" alt="">
+                                    <div class="people-de">
+                                        <h5>{{cargo.nombre}}</h5>
+                                        <p></p>
+                                    </div>
+                                </td>
+
+                                <td class="role">                            
+                                    <a class="boton-modal" data-bs-toggle="modal" data-bs-target="#borrarModal{{cargo.id}}"><label for="btn-modal">Borrar</label></a>                                  
+                                </td>
+    
+                                <td class="edit">
+                                    <a class="boton" data-bs-toggle="modal" data-bs-target="#editarModal{{cargo.id}}"><label for="btn">Editar</label></a> 
+                                </td>
+                          
+                        </tr> 
+                        
+                        <!-- Modal Eliminar --> 
+        
+                        <div class="modal fade" id="borrarModal{{cargo.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ELIMINAR</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Desea Borrar el Registro {{cargo.nombre}}?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <a href="{% url 'cargos-eliminar' cargo.id %}"  class="btn btn-danger boton">Eliminar</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>     
+                        <!-- fin modal Eliminar-->
+    
+                        <!-- Modal Editar --> 
+        
+                        <div class="modal fade" id="editarModal{{cargo.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">EDITAR</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    ¿Desea Editar el Registro {{cargo.nombre}}?
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <a href="{% url 'cargos-editar' cargo.id %}"  class="btn btn-info boton">Continuar</a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>     
+                        <!-- Fin modal Editar -->  
+
+                        {% endfor %}
+                                             
+                        
+                    </tbody>
+                    
+                </table>
+                {% endif %}
+            </div>
+    
+
+        </section>
+
+
+{% endblock contenido %}
+
+
+
+ 

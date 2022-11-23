@@ -1,0 +1,18 @@
+- Instalar Python
+- En la consola en C: crear una carpeta sanmartin
+- Verificar la versión de py --version
+- Dentro de la carpeta sanmartin, crear el venv py -m venv virtual-venv
+- Luego activamos el venv con Scripts\activate.bat
+- A la misma altura de virtual-venv pegamos la carpeta abuelitos
+- Nos colocamos dentro de la carpeta abuelitos y escribimos lo siguiente
+  pip install -r requirements.txt
+- También lo siguiente: run python manage.py collectstatic
+- run python manage.py runserver 0.0.0.0:8000
+
+- Instalar el modem 
+- Conectarse con tplinkwifi.net admin
+- Colocar clave datos
+- Verificar la ip que se le asigna al pc
+- Desde dispositivos móviles ingresar a través de esa IP
+- La dirección local para el PC
+- Sanmartin1980

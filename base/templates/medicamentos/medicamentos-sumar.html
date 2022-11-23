@@ -1,0 +1,30 @@
+{% extends 'partials/app.html' %} 
+{% load static %}
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %} 
+
+    <!-- nav-bar app-->
+    <section id="interface">
+        {% include 'partials/nav-app.html' %}
+
+       
+
+        <div class="container form">
+            <form action="" method="POST"> 
+                {% csrf_token %} 
+
+                <input type="text" name="cantidad" placeholder="Ingrese la cantidad: ">
+                <div>
+                    <input data-bs-toggle="modal"  type="submit" value="Sumar" class="btn-crear" id="">
+                </div>                
+            </form>
+            
+        </div>
+
+        
+
+    </section>
+
+
+{% endblock contenido %} 

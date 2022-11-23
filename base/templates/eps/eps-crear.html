@@ -1,0 +1,27 @@
+{% extends 'partials/app.html' %} 
+{% load crispy_forms_tags %} 
+{% load static %} 
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %} 
+
+    <!-- nav-bar app-->
+<section id="interface">
+    {% include 'partials/nav-app.html' %}
+
+    
+
+     <!-- formulario -->
+        <div class="container form">
+            <form action="" method="POST">
+                {{form|crispy}}
+                {% csrf_token %}
+                <div>
+                    <input type="submit" value="Registrar" class="btn-crear" id="">
+                </div>
+            </form>
+        </div>
+
+</section>
+
+{% endblock contenido %} 

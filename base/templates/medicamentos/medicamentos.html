@@ -1,0 +1,140 @@
+{% extends 'partials/app.html' %}
+{% load static %}
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %}
+
+    <!-- nav-bar app-->
+<section id="interface">
+    {% include 'partials/nav-app.html' %}
+
+
+
+    <!-- contenido -->
+
+    <div class="board">
+
+        <table id="example" class="table table-striped tabla-datos" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Paciente Asociado</th>                    
+                    <th>Stock</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>                        
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for medicamento in medicamentos %} 
+                    <tr>
+                         
+                            <td class="people">
+                                <img id="" src="{% static 'img/medicamento.png' %}" alt="">
+                                <div class="people-de">
+                                    <h5>{{medicamento.nombre}}</h5>
+                                    <p>Peso: {{medicamento.pesoBase}} {{medicamento.medida}}</p>
+                                </div>
+                            </td>
+
+                            <td class="people-des">
+                                <h5>{{medicamento.paciente.nombres}} {{medicamento.paciente.apellidos}}</h5>
+                                <p>ID Paciente: {{medicamento.paciente.id}}</p>
+                            </td>
+
+                            <td class="active">
+                                <p>{{medicamento.stock}}</p>
+                            </td>
+
+                            <td class="suma">                            
+                                
+                                <a class="boton-sumar" data-bs-toggle="modal" data-bs-target="#sumarModal{{medicamento.id}}"><label for="btn-modal">Sumar</label></a>                                
+                            </td>
+
+                            <td class="role">                            
+                                <a class="boton-modal" data-bs-toggle="modal" data-bs-target="#borrarModal{{medicamento.id}}"><label for="btn-modal">Borrar</label></a>                                  
+                            </td>
+
+                            <td class="edit">
+                                <a class="boton" data-bs-toggle="modal" data-bs-target="#editarModal{{medicamento.id}}"><label for="btn">Editar</label></a> 
+                            </td>
+                      
+                    </tr> 
+
+                    <!-- Modal Sumar --> 
+    
+                    <div class="modal fade" id="sumarModal{{medicamento.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">STOCK</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Desea Sumar nueva Cantidad al Stock de <strong>{{medicamento.nombre}}</strong>?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <a href="{% url 'medicamentos-sumar' medicamento.id %}" class="btn btn-danger boton">Sumar</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>     
+                    <!-- Fin modal sumar-->
+
+                    
+                    
+                    <!-- Modal Eliminar --> 
+    
+                    <div class="modal fade" id="borrarModal{{medicamento.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">ELIMINAR</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Desea Borrar el Registro <strong>{{medicamento.nombre}}</strong>?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <a href="{% url 'medicamentos-eliminar' medicamento.id %}"  class="btn btn-danger boton">Eliminar</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>     
+                    <!-- fin modal Eliminar-->
+
+                    <!-- Modal Editar --> 
+    
+                    <div class="modal fade" id="editarModal{{medicamento.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">EDITAR</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Desea Editar el Registro <strong>{{medicamento.nombre}}</strong>?
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <a href="{% url 'medicamentos-editar' medicamento.id %}"  class="btn btn-info boton">Continuar</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>     
+                    <!-- Fin modal Editar -->   
+                {% endfor %}
+                                
+            </tbody>
+            
+        </table>
+
+
+    </div>
+
+</section>
+
+{% endblock contenido %} 

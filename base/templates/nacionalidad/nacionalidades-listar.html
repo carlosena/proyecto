@@ -1,0 +1,58 @@
+{% extends 'partials/app.html' %} 
+{% load static %} 
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %} 
+
+        <!-- nav-bar app-->
+<section id="interface">
+    {% include 'partials/nav-app.html' %}
+
+    
+
+    <!-- formulario -->
+    <div class="board">
+
+        <table id="example" class="table table-striped tabla-datos" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                    <th>Fecha de creación</th>
+                   
+                    {% if request.user.username == 'admin' or request.user.username == 'virginia' %}
+                    <th></th>
+                    {% endif %}
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for nacionalidad in nacionalidades %} 
+                    <tr>
+
+                        <td>{{nacionalidad.id}}</td>
+                        <td>{{nacionalidad.nombre}}</td>                       
+                        <td>{{nacionalidad.estado}}</td>
+                        <td>{{nacionalidad.fechaCreacion| date:"d-m Y"}}</td>
+                        
+
+                        {% if request.user.username == 'virginia' or request.user.username == 'admin' %}
+                        <td class="edit">
+                            <a class="boton" href="{% url 'nacionalidades-editar' nacionalidad.id %}"><label for="btn">Editar</label></a> 
+                        </td>
+                        {% endif %} 
+
+                    </tr>                
+                {% endfor %}
+                                
+            </tbody>
+            
+        </table>
+
+
+    </div>
+
+</section>  
+
+{% endblock contenido %}

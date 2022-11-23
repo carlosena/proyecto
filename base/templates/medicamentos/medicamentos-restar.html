@@ -1,0 +1,63 @@
+{% extends 'partials/app.html' %}
+{% load static %}
+
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %}
+
+    <!-- nav-bar app-->
+<section id="interface">
+    {% include 'partials/nav-app.html' %}
+
+    
+    <!-- contenido -->
+
+    <div class="board">
+
+        <table id="example" class="table table-striped tabla-datos" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Paciente Asociado</th>
+                    <th>Aplicar</th>
+                    <th>Medicamento</th>
+                    <th>Presentación</th>
+                    <th>Peso (base)</th>                    
+                    <th>Dosis Administrar</th>
+                    <th>Frecuencia</th>
+                    <th>Observaciones</th>                    
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for medicamento in medicamentos %} 
+                    <tr>
+                        <td class="suma">                            
+                            <a class="boton-sumar" href="{% url 'medicamentos-sumar' medicamento.id %}"><label for="btn-modal">DOSIS</label></a>                                   
+                        </td>
+
+                        <td>{{medicamento.id}}</td>
+                        <td>{{medicamento.nombre}}</td>
+                        <td>{{medicamento.presentacion}}</td>
+                        <td>{{medicamento.pesoBase}} {{medicamento.medida}}</td>
+                        <td>{{medicamento.laboratorio}}</td>                        
+                        <td>{{medicamento.paciente.nombres}} {{medicamento.paciente.apellidos}}</td>
+                        <td>{{medicamento.dosis}} {{medicamento.medida}}</td>
+                        <td>{{medicamento.frecuencia}} horas</td>
+                        <td>{{medicamento.observaciones}}</td>
+                        <td>{{medicamento.stock}} {{medicamento.medida}}</td>
+                        <td>{{medicamento.profesional_salud}}</td>
+                        <td>{{medicamento.estado}}</td>        
+                         
+                    </tr>                
+                {% endfor %}
+                                
+            </tbody>
+            
+        </table>
+
+
+    </div>
+
+</section>
+
+{% endblock contenido %}

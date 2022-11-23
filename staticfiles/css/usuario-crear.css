@@ -1,0 +1,91 @@
+/* .form-usuarioCrear {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+} */
+
+
+/* .btn-crearUsuario {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.form {
+    margin: 20px;
+    width: 90%;
+}
+
+.btn-formUsuario {
+    margin-bottom: 30px;
+    width: 200px;
+    height: 60px;
+    border: none;
+}
+
+.btn-formUsuario:hover {
+    background: #787d8d !important;
+}
+
+.btn-crear {
+    margin-top: 10px;
+    background: #e45d99;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+#btn-crear:hover {
+    background: #e94890;
+}
+
+#btn-cancelar {
+    background: #7b74ec;    
+}
+
+
+@media (max-width: 820px) {
+
+    .board { 
+        width: 90%;
+    }
+
+    .form-usuarioCrear {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btn-crearUsuario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto !important;
+    }
+
+    .btn-crear {
+        margin: 10px !important;
+    }
+
+}
+
+@media (max-width: 477px) {
+
+    .board {
+        padding: 10px;
+    }
+
+    .form-usuarioCrear {
+        flex-direction: column;
+    }
+
+    .btn-crearUsuario {
+        width: 100%;
+    }
+
+}
+

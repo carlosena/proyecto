@@ -1,0 +1,27 @@
+.contenedor {
+    width: 50%;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-error {
+    width: 100%;
+}
+
+.titulo {
+    color: #7a7a7a;
+    display: flex;
+    text-align: center;
+}
+
+.titulo_codigo {
+    font-size: 150px;
+    color: #e6717c;
+}
+
+.icono-500 {
+    margin-right: 20px;
+}

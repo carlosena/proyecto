@@ -1,0 +1,31 @@
+{% load static %} 
+
+<!-- menu-lateral -->
+<section id="menu">
+    <div class="logo">
+        <a href="{% url 'cerrarSesion' %}">
+            <img src="{% static 'img/logoSML4.svg' %}" alt="Logo">
+        </a>            
+        <h2>San Martín de Loba</h2>
+    </div>
+
+    <div class="items">
+              
+                   
+        <li><i class="fas fa-user-friends icono"></i><a href="{% url 'familiar' %}">Familiar</a></li>
+        <li><i class="fas fa-hospital-user icono"></i><a href="{% url 'pacientes' %}">Paciente</a></li>
+        <li><i class="fas fa-capsules icono"></i><a href="{% url 'medicamentos' %}">Medicamento</a></li>        
+        <li><i class="fas fa-building icono"></i><a href="{% url 'laboratorio' %}">Laboratorio</a></li> 
+        <li><i class="fas fa-clinic-medical icono"></i><a href="{% url 'eps' %}">EPS</a></li> 
+        <li><i class="fas fa-flag icono"></i><a href="{% url 'nacionalidades' %}">Nacionalidad</a></li> 
+        
+        {% if request.user.username == 'virginia' or request.user.username == 'admin' %} 
+        
+        <li><i class="fas fa-briefcase icono"></i><a href="{% url 'cargos' %}">Cargo</a></li>
+        <li><i class="fas fa-user icon icono"></i><a href="{% url 'usuarios' %}">Usuario</a></li>         
+        
+        {% endif %}
+
+    </div>
+
+</section>
