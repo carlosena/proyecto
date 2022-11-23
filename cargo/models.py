@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 # Create your models here.
 
 class Cargo(models.Model):
-    nombre = models.CharField(max_length = 30, verbose_name = 'Nombre')
+    nombre = models.CharField(max_length = 30, unique = True, verbose_name = 'Nombre')
     class Estado(models.TextChoices):
         ACTIVO = '1', _('Activo')
         INACTIVO = '0', _('Inactivo')

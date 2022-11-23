@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Eps(models.Model):
-    nombre = models.CharField(max_length = 50, verbose_name = "Nombre")
+    nombre = models.CharField(max_length = 50, unique = True, verbose_name = "Nombre")
     class Estado(models.TextChoices):
         ACTIVO = '1', _('Activo')
         INACTIVO = '0', _('Inactivo')

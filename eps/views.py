@@ -45,7 +45,7 @@ def eps_crear(request):
         form = EpsForm(request.POST)
         if form.is_valid():
             form.save()
-            user = User.objects.get()
+            # user = User.objects.get()
             
             return redirect('eps')
         else: 
