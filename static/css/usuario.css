@@ -458,6 +458,113 @@ tbody tr td {
     color: #fff !important;
 }
 
+
+/* manual */
+
+.volver {
+    opacity: .7;
+    text-decoration: none;
+    text-align: center;
+    position: fixed;
+    right: 10px;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid #e6717c;
+    border-radius: 5px;
+    background: none;
+    color: #e6717c;
+}
+
+.volver:hover {
+    opacity: 1;
+    background-color: #e6717c;
+    color: #fff;
+    transition: .5s;
+}
+
+.manual {
+    /* position: absolute; */
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+    z-index: -1;
+    padding: 50px 10px;
+}
+
+.manual img {
+    width: 80%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.manual .container h1 {
+    color: #e6717c;    
+}
+
+.manual .container h3 {
+    color: #e6717c;    
+}
+
+.manual .container h4 {
+    color: #787d8d;
+    font-weight: bold;
+}
+
+.manual h5 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.manual p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+.manual .people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+.manual .people img {
+    width: 100px;
+    height: 100px;
+}
+
+.manual h3 {
+    color: #484848;
+    width: 100%;
+    padding: 0 0px 10px 3px;
+}
+
+.manual span {
+    color: #e6717c;
+    font-weight: bold;
+}
+
+.lista_link a {
+    text-decoration: none;
+    color: #787d8d;
+    padding: 5px;
+}
+
+.lista_link a span {
+    color: #e6717c;
+    font-weight: bold;    
+}
+
+.lista_link a:hover {
+    background-color: #d1cece;
+    color: #fff;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+
 @media (max-width: 820px) {
 
     #menu {  

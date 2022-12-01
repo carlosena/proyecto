@@ -9,6 +9,8 @@
     <section id="interface">
         {% if request.user.username == 'virginia' or request.user.username == 'admin'%}
         {% include 'partials/nav-app.html' %}
+
+        {% include 'partials/toast.html' %}
       
 
         
@@ -23,6 +25,8 @@
         </div>
         {% endif %}
     </section>
+
+    {% include 'partials/js.html' %}
 
 
 {% endblock contenido %} 

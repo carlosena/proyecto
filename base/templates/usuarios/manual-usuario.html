@@ -1,0 +1,439 @@
+
+{% extends 'partials/app.html' %}
+{% load static %}
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %}
+    
+
+<section id="interface">
+
+    <!-- contenido -->
+
+    <div class="manual">
+
+      <section class="container">
+        <div>          
+          <a href="#indice" class="volver">Volver al índice</a>
+        </div>
+        <h1 id="titulo_manual">Manual del Usuario</h1>
+
+        <!-- mapa de la aplicación -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="">
+          <h3 class="mb-5 fs-2 ">Mapa de la Aplicación<span> </span></h3>
+          <p class="fs-4">De clic al enlace de su interés para obtener información.</p>
+        </div>
+        <div class="mt-5 text-center" id="tabla_info">
+            <img class="mb-5" src="{% static 'img/vista_aplicacion.png' %}" alt="grupo de enfermer@s">
+        </div>
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="">
+          <ul class="lista_link">
+            <li class="mb-2"><a class="fs-4" href="{% url 'familiar' %}" id="indice">1. Regreso a <span>página principal.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_familiar">2. Acceso a módulo <span>familiar.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_paciente">3. Acceso a módulo <span>paciente.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_medicamento">4. Acceso a módulo <span>medicamento.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_laboratorio">5. Acceso a módulo <span>laboratorio.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_eps">6. Acceso a módulo <span>eps.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_nacionalidad">7. Acceso a módulo <span>nacionalidad.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_cargo">8. Acceso a módulo <span>cargo.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#mod_usuario">9. Acceso a módulo <span>usuario.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#tabla_info">10. Acceso para cerrar <span>sesión activa.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#tabla_info">11. Visualiza el <span>usuario activo</span> en el momento.</a></li>
+            <li class="mb-2"><a class="fs-4" href="#tabla_info">12. Título del <span>módulo activo</span> en el momento.</a></li>
+            <li class="mb-2"><a class="fs-4" href="#tabla_info">13. Accesos al <span>CRUD del módulo activo.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#crear_archivos">14. Botones para <span>crear archivos.</span> o imprimir datos desde la tabla.</a></li>
+            <li class="mb-2"><a class="fs-4" href="#tabla_info">15. Tabla con la información de los datos.</a></li>
+            <li class="mb-2"><a class="fs-4" href="#acceder"><span>Acceder al programa.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#ingresar_clave"><span>Ingresar credenciales.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#olvido_clave"><span>Olvido de clave.</span></a></li>
+            <li class="mb-2"><a class="fs-4" href="#cambio_clave"><span>Cambio de clave.</span></a></li>
+          </ul>
+        </div>
+
+        <div class="w-75 m-auto  border-top border-3 borde pt-5" id="acceder">
+          <h3 class="mb-5 fs-2 ">Acceder al programa<span> </span></h3>
+          <p class="fs-4">En esta parte ingresamos en los campos disponibles las credenciales que fueron asignadas al administrador o dueño del proyecto y accedemos con el botón “Ingresar”:</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/ingresar_sistema.png' %}" alt="grupo de enfermer@s">
+        </div>
+        
+        <!-- ingresar credenciales -->
+        <div class="w-75 m-auto  border-top border-3 borde pt-5" id="ingresar_clave">
+          <h3 class="mb-5 fs-2 ">Ingresar Credenciales<span> </span></h3>
+          <p class="fs-4">En esta parte ingresamos en los campos disponibles las credenciales que fueron asignadas al administrador o dueño del proyecto y accedemos con el botón “Ingresar”:</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/credenciales.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <!-- olvido de clave -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="olvido_clave">
+          <h3 class="mb-5 fs-2 ">Olvido de Clave<span> </span></h3>
+          <p class="fs-4">En caso de olvido de contraseña, el usuario podrá hacer uso del módulo de recuperación de contraseña que está disponible en el módulo de “Iniciar Sesión”, acceder al link “¿Olvidó su contraseña?” y luego siga las instrucciones.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/olvido_clave.png' %}" alt="grupo de enfermer@s">
+        </div>
+        <div class="mt-5 text-center">
+          <img class="mb-5" src="{% static 'img/restablecer_clave.png' %}" alt="grupo de enfermer@s">
+      </div>
+
+        <!-- cambio de clave -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="cambio_clave">
+          <h3 class="mb-5 fs-2 ">Cambio de Clave<span> </span></h3>
+          <p class="fs-4">El usuario podrá cambiar su contraseña si lo desea por una nueva, deberá suministrar la contraseña anterior para poder realizar el proceso.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/cambio_clave.png' %}" alt="grupo de enfermer@s">
+        </div>
+        <div class="mt-5 text-center">
+          <img class="mb-5" src="{% static 'img/cambio_clave_1.png' %}" alt="grupo de enfermer@s">
+      </div>
+
+            
+
+        <!-- módulo familiar -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_familiar">
+          <h3 class="mb-5 fs-2 ">Módulo Familiar<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil familiar y “lista familiar nos permiten ver una tabla con los datos de los pacientes.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_familiar.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo familiar en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_familiar.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada familiar registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_familiar.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_familiar.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <!-- módulo paciente -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_paciente">
+          <h3 class="mb-5 fs-2 ">Módulo Paciente<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil paciente” y “lista paciente” nos permiten ver una tabla con los datos de los pacientes.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_paciente.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo familiar en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_paciente.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada paciente registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_paciente.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_paciente.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- Módulo Laboratorio -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_laboratorio">
+          <h3 class="mb-5 fs-2 ">Módulo Laboratorio<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil laboratorio” y “lista laboratorio” nos permiten ver una tabla con los datos de los laboratorios.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_laboratorio.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo laboratorio en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_laboratorio.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada laboratorio registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_laboratorio.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_laboratorio.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- Módulo EPS  -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_eps">
+          <h3 class="mb-5 fs-2 ">Módulo EPS<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil eps” y “lista eps” nos permiten ver una tabla con los datos de las eps donde están afiliados los pacientes.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_eps.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear una nueva eps en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_eps.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada eps registrada. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_eps.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_eps.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- Módulo nacionalidad -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_nacionalidad">
+          <h3 class="mb-5 fs-2 ">Módulo Nacionalidad<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil nacionalidad” y “lista nacionalidad” nos permiten ver una tabla con los datos de las nacionalidades.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_nacionalidad.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear una nueva nacionalidad en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_nacionalidad.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada nacionalidad registrada. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_nacionalidad.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_nacionalidad.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- Módulo cargo -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_cargo">
+          <h3 class="mb-5 fs-2 ">Módulo Cargo (disponible solo para perfil administrador).<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil cargo” y “lista cargo” nos permiten ver una tabla con los datos de los cargos activos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_cargo.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo cargo en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_cargo.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada cargo registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_cargo.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_cargo.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- Módulo usuario -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_usuario">
+          <h3 class="mb-5 fs-2 ">Módulo Usuario (disponible solo para perfil administrador).<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil usuario” y “lista usuario” nos permiten ver una tabla con los datos de los usuarios.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_usuario.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo usuario en la base de datos. </p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_usuario.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada usuario registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_usuario.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_usuario.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+
+        <!-- modulo medicamento -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="mod_medicamento">
+          <h3 class="mb-5 fs-2 ">Módulo Medicamento<span> </span></h3>
+          <h4>Listar:</h4>
+          <p class="fs-4">Los botones “perfil medicamento” y “lista medicamento” nos permiten ver una tabla con los datos de los medicamentos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/modulo_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Crear:</h4>
+          <p class="fs-4">El botón crear nos lleva a un formulario que al ser diligenciado correctamente con la información y accionar el botón “Registrar”, nos permitirá crear un nuevo medicamento en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/crear_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Editar:</h4>
+          <p class="fs-4">El botón editar nos permitirá realizar cambios puntuales en los datos de cada medicamento registrado. Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/editar_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Borrar:</h4>
+          <p class="fs-4">El botón borrar nos permitirá eliminar el registro de la base de datos (por ahora solo queda inhabilitado el registro). Se mostrará una ventana tipo modal para verificar si está segur@ de continuar con el procedimiento.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/borrar_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Sumar:</h4>
+          <p class="fs-4">El botón sumar nos permite agregar nuevas existencias del medicamento indicado, esto afectará positivamente la cantidad “Stock” en la base de datos.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/sumar_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <h4>Suministrar medicamento:</h4>
+          <p class="fs-4">Estos botones e indicativos nos permiten llevar los tiempos en que se va administrando un medicamento específico a un paciente puntual. </p>
+
+          <p class="fs-4">-	<span>Pendiente:</span> Significa que todavía tiene pendiente dosis por administrar.</p>
+          <p class="fs-4">-	<span>Completado:</span> Significa que ya se administraron las dosis correspondientes del día.</p>
+          <p class="fs-4">-	<span>Inactivo:</span> Significa que el medicamento esta eliminado o ha sido suspendido temporalmente.</p>
+          
+        </div>
+        <div class="mt-5 text-center">
+          <img class="mb-5" src="{% static 'img/estados_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">   
+          <p class="fs-4">Al administrar el medicamento aparecerá una ventana modal con los datos puntuales del mismo y del paciente, así como la dosis, cantidad total diaria y stock, de forma que la persona que administra puede estar segur@ del procedimiento. </p>
+          <p class="fs-4">Los valores se vuelven a reiniciar cada vez que cambia la fecha del sistema.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/suministrar_medicamento.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        <div class="w-75 m-auto border-top border-3 pt-5" id="">          
+          <p class="fs-4">Para listar los medicamentos que pertenecen a un solo paciente basta con buscar el nombre del paciente en el campo de “Buscar” de la tabla.</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/listar_medicamento_paciente.png' %}" alt="grupo de enfermer@s">
+        </div>
+
+        
+
+
+
+
+        <!-- exportar archivos -->
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="crear_archivos">
+          <h3 class="mb-5 fs-2 ">Exportar archivos<span> </span></h3>
+          <p class="fs-4">Es posible exportar en archivo digital los valores de cualquier tabla de los módulos, los botones permiten:</p>
+        </div>
+        <div class="mt-5 text-center">
+            <img class="mb-5" src="{% static 'img/exportar_archivos.png' %}" alt="grupo de enfermer@s">
+        </div>
+        <div class="w-75 m-auto border-top border-3 borde pt-5">
+          <p class="fs-4"><span>a.</span> Copiar el contenido para pegarlo en otro documento.</p>
+          <p class="fs-4"><span>b.</span> Exportar a archivo con formato Excel.</p>
+          <p class="fs-4"><span>c.</span> Exportar a archivo con formato PDF.</p>
+          <p class="fs-4"><span>d.</span> Imprimir en papel.</p>
+          
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+</section>
+
+{% endblock contenido %} 
+

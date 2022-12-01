@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from cargo.forms import CargoForm 
 from cargo.models import Cargo
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -44,6 +45,7 @@ def cargo_crear(request):
         form = CargoForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Cargo creado correctamente')
             return redirect('cargos')
         else:
             print('Error')
@@ -67,6 +69,7 @@ def cargo_editar(request, pk):
         form = CargoForm(request.POST, instance = cargo)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Cargo editado correctamente')
             return redirect('cargos')
         else: 
             print('Error al guardar')

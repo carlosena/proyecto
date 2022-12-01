@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from laboratorio.forms import LaboratorioForm
 from laboratorio.models import Laboratorio
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -45,6 +46,7 @@ def laboratorio_crear(request):
         form = LaboratorioForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Laboratorio creado correctamente')
             return redirect('laboratorio')
         else:
             print("Error")
@@ -68,6 +70,7 @@ def laboratorio_editar(request, pk):
         form = LaboratorioForm(request.POST, instance = lab)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Laboratorio editado correctamente')
             return redirect('laboratorio')
         else:
             print("Error al guardar")

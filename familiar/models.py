@@ -10,6 +10,7 @@ class Familiar(models.Model):
     class TipoDocumento(models.TextChoices):
         CC = 'C.C', _('Cédula de Ciudadanía')
         CE = 'C.E', _('Cédula de Extranjería')
+        PT = 'PST', _('Pasaporte')
         TI = 'T.I', _('Tarjeta de Identidad')
         OT = 'Otro', _('Otro tipo de Documento')
     tipoDocumento = models.CharField(max_length = 4, choices = TipoDocumento.choices, default = TipoDocumento.CC, verbose_name = 'Tipo Documento')

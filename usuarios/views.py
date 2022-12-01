@@ -52,7 +52,7 @@ def usuarios_crear(request):
             
             user.save()
             
-            #messages.success(request, 'Usuario creado correctamente')
+            messages.success(request, 'Usuario creado correctamente')
 
             return redirect('usuarios')
             
@@ -79,6 +79,7 @@ def usuarios_editar(request, pk):
         form = UsuarioForm(request.POST, instance = usuario)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Usuario editado correctamente')
             return redirect('usuarios')
         else:
             print("Error al guardar")
@@ -101,6 +102,13 @@ def usuarios_eliminar(request, pk):
     )    
     return redirect('usuarios')
 
+@login_required
+def manual(request):
+    titulo = 'Manual Usuario'
+    context = {
+        'titulo': titulo
+    }
+    return render(request, 'usuarios/manual-usuario.html', context)
 
 
     

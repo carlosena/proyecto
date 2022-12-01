@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from familiar.forms import FamiliarForm
 from familiar.models import Familiar
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -46,6 +47,7 @@ def familiar_crear(request):
         form = FamiliarForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Familiar creado correctamente')
             return redirect('familiar')
         else:
             print("Error") 
@@ -69,6 +71,7 @@ def familiar_editar(request, pk):
         form = FamiliarForm(request.POST, instance = familiar)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Familiar editado correctamente')
             return redirect('familiar')
         else: 
             print("Error al guardar")

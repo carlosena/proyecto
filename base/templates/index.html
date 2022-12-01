@@ -4,15 +4,19 @@
 
 {% block contenido %} 
 
+    {% include 'partials/toast.html' %} 
+
     {% include 'partials/header.html' %}
 
     {% include 'partials/navbar.html' %} 
 
     {% include 'partials/main.html' %}
 
-    {% include 'partials/contacto.html' %} 
+    {% include 'partials/contacto.html' %}     
 
     {% include 'partials/footer.html' %} 
+
+    {% include 'partials/js.html' %}
        
     
 {% endblock contenido %} 

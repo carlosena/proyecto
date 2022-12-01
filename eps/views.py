@@ -3,6 +3,7 @@ from eps.forms import EpsForm
 from eps.models import Eps
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.contrib import messages
 
 # Create your views here.
 
@@ -46,7 +47,7 @@ def eps_crear(request):
         if form.is_valid():
             form.save()
             # user = User.objects.get()
-            
+            messages.success(request, 'EPS creada correctamente')
             return redirect('eps')
         else: 
             print("Error")
@@ -70,6 +71,7 @@ def eps_editar(request, pk):
         form = EpsForm(request.POST, instance = eps)
         if form.is_valid():
             form.save()
+            messages.success(request, 'EPS editada correctamente')
             return redirect('eps')
         else: 
             print("Error al guardar")

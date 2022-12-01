@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect
 from nacionalidad.forms import NacionalidadForm
 from nacionalidad.models import Nacionalidad 
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -46,6 +47,7 @@ def nacionalidad_crear(request):
         form = NacionalidadForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Nacionalidad creada correctamente')
             return redirect('nacionalidades')
         else: 
             print('Error')
@@ -69,6 +71,7 @@ def nacionalidad_editar(request, pk):
         form = NacionalidadForm(request.POST, instance = nacionalidad)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Nacionalidad editada correctamente')
             return redirect('nacionalidades')
         else:
             print('Error al guardar')

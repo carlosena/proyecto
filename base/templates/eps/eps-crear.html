@@ -2,6 +2,7 @@
 {% load crispy_forms_tags %} 
 {% load static %} 
 
+
 {% block contenido %} 
     {% include 'partials/sidebar.html' %} 
 
@@ -10,6 +11,7 @@
     {% include 'partials/nav-app.html' %}
 
     
+    {% include 'partials/toast.html' %}
 
      <!-- formulario -->
         <div class="container form">
@@ -23,5 +25,7 @@
         </div>
 
 </section>
+
+{% include 'partials/js.html' %}
 
 {% endblock contenido %} 

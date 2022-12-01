@@ -4,4 +4,5 @@ from familiar.models import Familiar
 class FamiliarForm(ModelForm):
     class Meta: 
         model = Familiar
-        fields = '__all__'
+        #fields = '__all__'
+        exclude = ['fechaCreacion']

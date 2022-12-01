@@ -4,6 +4,7 @@ from inicio.models import FechaDeDosis
 from medicamento.forms import MedicamentoForm
 from medicamento.models import Medicamento
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -74,7 +75,7 @@ def medicamento_crear(request):
         form = MedicamentoForm(request.POST)
         if form.is_valid():
             form.save()
-
+            messages.success(request, 'Medicamento creado correctamente')
             return redirect('medicamentos')
         else:
             print('Error')
@@ -99,6 +100,7 @@ def medicamento_editar(request, pk):
         form = MedicamentoForm(request.POST, instance = medicamento)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Medicamento editado correctamente')
             return redirect('medicamentos')
         else: 
             print('Error al guardar')
@@ -142,6 +144,7 @@ def medicamento_sumar(request, pk):
         Medicamento.objects.filter(id = pk).update(
             stock = new
         )
+        messages.success(request, 'La cantidad de sumó correctamente')
         return redirect('medicamentos')
     else: 
         form = MedicamentoForm(instance = medicamento)

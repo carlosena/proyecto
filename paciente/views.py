@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from paciente.forms import PacienteForm
 from paciente.models import Paciente
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 # Create your views here.
 
@@ -44,6 +45,7 @@ def pacientes_crear(request):
         form = PacienteForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Paciente creado correctamente')
             return redirect('pacientes')
         else:
             print("Error")
@@ -67,6 +69,7 @@ def pacientes_editar(request, pk):
         form = PacienteForm(request.POST, instance = paciente)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Paciente editado correctamente')
             return redirect('pacientes')
         else:
             print("Error al guardar")

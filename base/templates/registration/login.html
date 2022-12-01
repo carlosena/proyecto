@@ -6,7 +6,7 @@
 {% block contenido %} 
 
 <!-- toast -->
-{% include 'partials/messages.html' %}
+{% include 'partials/toast.html' %}
 
 
 <!-- end toast -->
@@ -32,14 +32,14 @@
                                     <div>
                                         <h2 class="fw-bold-md-4 pb-2 text-center">Iniciar Sesión</h2>
                                         <div class="form-outline mb-3">
-                                            <input type="text" id="usuario" name="username" class="form-control form-control-lg">
+                                            <input type="text" id="usuario" name="username" class="form-control form-control-lg" >
                                             
-                                            <label for="usuario" class="form-label">Usuario</label>
+                                            <label for="usuario" class="form-label">Usuario Válido</label>
                                         </div>
                                         <div class="form-outline mb-4">
                                             <input type="password" id="clave" name="password" class="form-control form-control-lg">
                                           
-                                            <label for="clave" class="form-label">Clave</label>
+                                            <label for="clave" class="form-label">Clave Válida</label>
                                         </div>
 
                                         <div class="text-center">
@@ -64,6 +64,8 @@
         </div>
     </div>
 </section>
+
+{% include 'partials/js.html' %}
 
 <!-- <script type="text/javascript">
     toastr.{ { message.tags } } ("{{ message }}");
