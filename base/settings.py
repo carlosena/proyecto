@@ -57,8 +57,7 @@ INSTALLED_APPS = [
     'formula',
     'nacionalidad',
     'cargo',
-    'inicio', 
-    'dbbackup', # pip install django-dbbackup
+    'inicio'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
