@@ -15,4 +15,11 @@
 - Verificar la ip que se le asigna al pc
 - Desde dispositivos móviles ingresar a través de esa IP
 - La dirección local para el PC
-- Sanmartin1980
+- Sanmartin
+
+- Backup DB
+- En la terminal python manage.py dumpdata --indent 4 > db.json
+- Verificar que el archivo quedo codificado con UTF-8
+- Para cargar una DB existente python manage.py loaddata db.json 
+- Para borrar una DB python manage.py flush
+

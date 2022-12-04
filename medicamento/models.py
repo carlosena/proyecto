@@ -46,7 +46,7 @@ class Medicamento(models.Model):
         OCHO = '8', _('8 horas')
         DOCE = '12', _('12 horas')
         V24 = '24', _('24 horas')
-        OT = 'Otro', _('Otra Frecuencia')
+        #OT = 'Otro', _('Otra Frecuencia')
     frecuencia = models.CharField(max_length = 4, choices = Frecuencia.choices, default = Frecuencia.DOCE, verbose_name = 'Frecuencia')
     observaciones = models.TextField(max_length = 250, verbose_name = 'Observaciones')
     profesional_salud = models.CharField(max_length = 50, null = True, blank = False, verbose_name = 'Profesional que Prescribe')

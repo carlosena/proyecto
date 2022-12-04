@@ -29,7 +29,7 @@ class Paciente(models.Model):
         INGRESO = 'Ingreso', _('Ingreso')
         SALIDA = 'Salida', _('Salida')
     tipoNovedad = models.CharField(max_length = 7, choices = TipoNovedad.choices, default = TipoNovedad.INGRESO, verbose_name = "Tipo Novedad")
-    fechaNovedad = models.DateField(verbose_name = "Fecha Novedad", help_text = u"DD/MM/AAAA")
+    fechaNovedad = models.DateField(verbose_name = "Fecha de Novedad", help_text = u"DD/MM/AAAA")
     eps = models.ForeignKey(Eps, on_delete = models.CASCADE, null = True, blank = False, verbose_name = 'EPS')
     familiar = models.ForeignKey(Familiar, on_delete = models.CASCADE, null = True, blank = False, verbose_name = "Persona Responsable")
     nacionalidad = models.ForeignKey(Nacionalidad, on_delete = models.CASCADE, null = True, blank = False, verbose_name = "Nacionalidad")

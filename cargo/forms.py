@@ -6,3 +6,4 @@ class CargoForm(ModelForm):
         model = Cargo
         #fields = '__all__'
         exclude = ['fechaCreacion']
+        
