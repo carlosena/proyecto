@@ -362,6 +362,14 @@ tbody tr td {
     color: #2b2b2b;
 }
 
+.warning p {
+    background: #dd515f;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #fff;
+}
+
 .suma a {
     border-radius: 3px;
     padding: 8px;
