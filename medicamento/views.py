@@ -22,6 +22,8 @@ def medicamento(request):
         if medicamento.estado != '0':
             medicamentos.append(medicamento)
             fechaContador = medicamento.fechaDosis
+            medicamento.consumoDiario = int(24 / int(medicamento.frecuencia))
+            medicamento.alerta = int(4 * medicamento.consumoDiario)
             
     
 
@@ -42,7 +44,8 @@ def medicamento(request):
         'url': '',
         'urlCrear': 'crear/',
         'urlListar': 'listar/',
-        'fecha': fechaContador
+        'fecha': fechaContador,
+        'alerta': medicamento.alerta
     }
     return render(request, 'medicamentos/medicamentos.html', context)
 
