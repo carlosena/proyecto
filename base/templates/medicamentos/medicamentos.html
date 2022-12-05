@@ -43,9 +43,15 @@
                                 <p>ID Paciente: {{medicamento.paciente.id}}</p>
                             </td>
 
-                            <td class="active">
+                            {% if medicamento.stock > medicamento.alerta %}
+                            <td class="active">                                
+                                <p>{{medicamento.stock}}</p>
+                            </td>                            
+                            {% elif medicamento.stock <= medicamento.alerta %}
+                            <td class="warning">                                
                                 <p>{{medicamento.stock}}</p>
                             </td>
+                            {% endif %}
 
                             <td class="suma">                            
                                 

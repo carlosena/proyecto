@@ -8,7 +8,7 @@
             <i id="menu-btn" class="fas fa-bars"></i>
         </div>
         <div class="btn salir"><i class="far fa-times-circle"></i></i>
-            <a href="{% url 'cerrarSesion' %}">Cerrar Sesión</a>
+            <a class="boton-sumar" data-bs-toggle="modal" data-bs-target="#cerrarSesion"><label for="btn-modal"></label>Cerrar Sesión</a>   
         </div>
     </div>
 
@@ -75,3 +75,23 @@
  
 </div>
 
+<!-- Modal cerrar sesión --> 
+    
+<div class="modal fade" id="cerrarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            ¿Desea cerrar su sesión?
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <a href="{% url 'cerrarSesion' %}" class="btn btn-danger boton">Cerrar Sesión</a>
+        </div>
+    </div>
+    </div>
+</div>     
+<!-- Fin modal cerrar sesión-->
