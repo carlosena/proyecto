@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from familiar.models import Familiar
 from eps.models import Eps
 from nacionalidad.models import Nacionalidad
+from django.core.validators import MinValueValidator
 
 # Create your models here.
 
@@ -16,7 +17,8 @@ class Paciente(models.Model):
         TI = 'T.I', _('Tarjeta de Identidad')
         OT = 'Otro', _('Otro tipo de Documento')
     tipoDocumento = models.CharField(max_length = 4, choices = TipoDocumento.choices, default = TipoDocumento.CC, verbose_name = "Tipo Documento")
-    numDocumento = models.CharField(max_length = 50, unique = True, verbose_name = "Número de Documento")
+    #numDocumento = models.CharField(max_length = 50, unique = True, verbose_name = "Número de Documento")
+    numDocumento = models.PositiveIntegerField(validators=[MinValueValidator(0)], unique = True, verbose_name = 'Número de Documento')
     nombres = models.CharField(max_length = 60, verbose_name = "Nombres")
     apellidos = models.CharField(max_length = 60, verbose_name = "Apellidos")
     fechaNacimiento = models.DateField(verbose_name = "Fecha de Nacimiento", help_text = u"DD/MM/AAAA")
@@ -29,7 +31,7 @@ class Paciente(models.Model):
         INGRESO = 'Ingreso', _('Ingreso')
         SALIDA = 'Salida', _('Salida')
     tipoNovedad = models.CharField(max_length = 7, choices = TipoNovedad.choices, default = TipoNovedad.INGRESO, verbose_name = "Tipo Novedad")
-    fechaNovedad = models.DateField(verbose_name = "Fecha de Novedad", help_text = u"DD/MM/AAAA")
+    #fechaNovedad = models.DateField(verbose_name = "Fecha de Novedad", help_text = u"DD/MM/AAAA")
     eps = models.ForeignKey(Eps, on_delete = models.CASCADE, null = True, blank = False, verbose_name = 'EPS')
     familiar = models.ForeignKey(Familiar, on_delete = models.CASCADE, null = True, blank = False, verbose_name = "Persona Responsable")
     nacionalidad = models.ForeignKey(Nacionalidad, on_delete = models.CASCADE, null = True, blank = False, verbose_name = "Nacionalidad")

@@ -9,7 +9,7 @@
     <div class="container" id="contenedor-formulario">
 
         <div id="titulo-formulario" class="text-center mb-4">
-            <div><img src="{% static 'img/doctora.jpg' %}" alt="Imagen de doctora" class="img-fluid img-formulario" /></div>
+            <div><img data-bs-toggle="mensaje" title="Imagen doctora - pixabay" src="{% static 'img/doctora.jpg' %}" alt="Imagen de doctora" class="img-fluid img-formulario" /></div>
             <h2>Contacto</h2>
             <p class="fs-5">Estamos aqui para hacer realidad tus proyectos</p>
         </div>
@@ -29,7 +29,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="mensaje" placeholder="Escriba su mensaje..."></textarea>
               </div>
               <div class="mb-3">
-                <button type="submit" class="btn w-100 fs-5 boton">Enviar Mensaje</button>
+                <button data-bs-toggle="mensaje" title="Enviar Mensaje" type="submit" class="btn w-100 fs-5 boton">Enviar Mensaje</button>
               </div>
         </form>
         

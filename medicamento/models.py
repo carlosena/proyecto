@@ -25,7 +25,8 @@ class Medicamento(models.Model):
         VIAL = 'Vial', _('Vial')
         OT = 'Otro', _('Otro Tipo de Presentación')
     presentacion = models.CharField(max_length = 80, choices = Presentacion.choices, default = Presentacion.PASTILLAS, verbose_name = 'Presentación')
-    pesoBase = models.CharField(max_length = 4, verbose_name = 'Peso Base')
+    #pesoBase = models.CharField(max_length = 4, verbose_name = 'Peso Base')
+    pesoBase = models.PositiveIntegerField(validators=[MinValueValidator(0)], verbose_name = 'Peso Base')
     class Medida(models.TextChoices):
         mcg = 'mcg', _('Microgramos')
         mg = 'mg', _('Miligramos')
@@ -35,8 +36,10 @@ class Medicamento(models.Model):
         ot = 'otro', _('Otro peso')
     medida = models.CharField(max_length = 4, choices = Medida.choices, default = Medida.mg, verbose_name = 'Medida')
     laboratorio = models.ForeignKey(Laboratorio, on_delete = models.CASCADE, null = True, blank = False, verbose_name = 'Laboratorio')
-    stock = models.PositiveIntegerField(validators=[MinValueValidator(0)], verbose_name = 'Stock')
+    #stock = models.PositiveIntegerField(validators=[MinValueValidator(0)], verbose_name = 'Stock')
+    stock = models.PositiveIntegerField(validators=[MinValueValidator(0)], verbose_name = 'Cantidad')
     dosis = models.PositiveIntegerField(validators=[MinValueValidator(0)], null = True, blank = False, verbose_name = 'Dosis a Administrar')
+
     class Frecuencia(models.TextChoices):
         UNA = '1', _('1 hora')
         DOS = '2', _('2 horas')

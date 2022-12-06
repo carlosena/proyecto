@@ -5,6 +5,6 @@ class MedicamentoForm(ModelForm):
     class Meta:
         model = Medicamento
         # fields = '__all__'
-        exclude = ['consumoDiario', 'contador', 'alerta', 'fechaCreacion', 'ultimaDosis', 'fechaDosis']
+        exclude = ['consumoDiario', 'contador', 'alerta', 'fechaCreacion', 'ultimaDosis']
 
 

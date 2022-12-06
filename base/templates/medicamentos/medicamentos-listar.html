@@ -20,21 +20,23 @@
                 <tr>
                   
                     <th>Admin Dosis</th>
-                    <th>Paciente Asociado</th>                    
-                    <th>Nombre</th>
-                    <th>Dosis Suministradas</th>
-                    <th>Dosis Diaria</th>                   
+                    <th>Paciente Asociado</th>   
+                    <th>Dosis</th>                 
+                    <th>Nombre</th> 
                     <th>Presentación</th>
                     <th>Peso (base)</th>
-                    <th>Laboratorio</th>                    
+                    <th>Laboratorio</th>                      
+                    <th>Dosis Suministradas</th>
+                    <th>Dosis Diaria</th>                
                     <th>Frecuencia</th>
                     <th>Observaciones</th>
-                    <th>Stock</th>                              
+                    <th>Existencias</th>                              
                     <th>Profesional que Prescribe</th>
                     <th>Fecha</th>
                     <th>ID</th>                   
                     <th>Estado</th>
                     <th>Fecha de creación</th>
+                    
                     {% if request.user.username == 'virginia' or request.user.username == 'admin' %}
                     <th></th>
                     {% endif %}
@@ -60,13 +62,14 @@
                         </td>
                         {% endif %}
 
-                        <td>{{medicamento.paciente.nombres}} {{medicamento.paciente.apellidos}}</td>                        
+                        <td>{{medicamento.paciente.nombres}} {{medicamento.paciente.apellidos}}</td>  
+                        <td>{{medicamento.dosis}}</td>                      
                         <td>{{medicamento.nombre}}</td>
-                        <td>{{medicamento.contador}}</td>
-                        <td>{{medicamento.consumoDiario}}</td>                       
                         <td>{{medicamento.presentacion}}</td>
                         <td>{{medicamento.pesoBase}} {{medicamento.medida}}</td>
                         <td>{{medicamento.laboratorio}}</td>
+                        <td>{{medicamento.contador}}</td>
+                        <td>{{medicamento.consumoDiario}}</td>                       
                         <td>{{medicamento.frecuencia}} horas</td>
                         <td>{{medicamento.observaciones}}</td>
                         <td>{{medicamento.stock}}</td>                        
@@ -122,10 +125,10 @@
                                 </div>
                                 
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
                                     
                                     {% if medicamento.stock != 0 %}
-                                    <a href="{% url 'medicamentos-restar' medicamento.id %}" class="btn btn-danger boton">Confirmar</a> 
+                                    <a href="{% url 'medicamentos-restar' medicamento.id %}" class="btn boton-aceptar boton">Confirmar</a> 
                                     {% else %} 
                                     <a href="#" class="btn btn-danger boton">No hay Stock</a>                                   
                                     {% endif %}

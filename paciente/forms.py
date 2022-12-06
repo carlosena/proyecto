@@ -6,7 +6,7 @@ class PacienteForm(ModelForm):
         model = Paciente
         #fields = '__all__'
         widgets={
-            'fechaNacimiento': widgets.DateInput(attrs={'type':'date'}),
-            'fechaNovedad': widgets.DateInput(attrs={'type':'date'})
+            'fechaNacimiento': widgets.DateInput(attrs={'type':'date'})
+            #'fechaNovedad': widgets.DateInput(attrs={'type':'date'})
         }
-        exclude = ['fechaCreacion']
+        exclude = ['fechaCreacion', 'tipoNovedad']

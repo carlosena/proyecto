@@ -96,7 +96,8 @@ def usuarios_editar(request, pk):
 
 
 @login_required
-def usuarios_eliminar(request, pk):   
+def usuarios_eliminar(request, pk): 
+    messages.success(request, 'Usuario eliminado correctamente')  
     Usuario.objects.filter(id = pk).update(
         estado = '0'
     )    

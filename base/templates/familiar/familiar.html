@@ -71,8 +71,8 @@
                                 ¿Está Seguro de Borrar el Registro <strong>{{familiar.nombres}} {{familiar.apellidos}}</strong> ?
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                <a href="{% url 'familiar-eliminar' familiar.id %}"  class="btn btn-danger boton">Eliminar</a>
+                                <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                                <a href="{% url 'familiar-eliminar' familiar.id %}"  class="btn boton-peligro boton">Eliminar</a>
                             </div>
                         </div>
                         </div>
@@ -92,8 +92,8 @@
                                 ¿Desea Editar el Registro {{familiar.nombres}} {{familiar.apellidos}}?
                             </div>
                             <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <a href="{% url 'familiar-editar' familiar.id %}"  class="btn btn-info boton">Continuar</a>
+                            <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                            <a href="{% url 'familiar-editar' familiar.id %}"  class="btn boton-aceptar boton">Editar</a>
                             </div>
                         </div>
                         </div>

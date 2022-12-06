@@ -57,8 +57,8 @@
                                     ¿Desea Borrar el Registro <strong>{{lab.nombre}}</strong>?
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                    <a href="{% url 'laboratorio-eliminar' lab.id %}"  class="btn btn-danger boton">Eliminar</a>
+                                    <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                                    <a href="{% url 'laboratorio-eliminar' lab.id %}"  class="btn boton-peligro boton">Eliminar</a>
                                 </div>
                             </div>
                             </div>
@@ -78,8 +78,8 @@
                                     ¿Desea Editar el Registro <strong>{{lab.nombre}}</strong>?
                                 </div>
                                 <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                <a href="{% url 'laboratorio-editar' lab.id %}"  class="btn btn-info boton">Continuar</a>
+                                <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                                <a href="{% url 'laboratorio-editar' lab.id %}"  class="btn boton-aceptar boton">Editar</a>
                                 </div>
                             </div>
                             </div>

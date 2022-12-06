@@ -573,6 +573,43 @@ tbody tr td {
     border-radius: 5px;
 }
 
+/* botones aceptar y cancelar modal */
+.boton-aceptar {
+    border: 1px solid #55c18b;
+    color: #55c18b;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.boton-aceptar:hover {
+    background-color: #55c18b;
+    color: #fff;
+}
+
+.boton-cancelar {
+    color: #787d8d;
+    border: 1px solid #787d8d;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.boton-cancelar:hover {
+    background-color: #787d8d;
+    color: #fff;
+}
+
+.boton-peligro {
+    border: 1px solid #e45d49;
+    color: #e45d49;
+    font-weight: bold;
+    transition: .5s ease;
+}
+
+.boton-peligro:hover {
+    background-color: #e45d49;
+    color: #fff;
+}
+
 
 @media (max-width: 820px) {
 

@@ -1,0 +1,1496 @@
+[
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add usuario",
+        "content_type": 7,
+        "codename": "add_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change usuario",
+        "content_type": 7,
+        "codename": "change_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete usuario",
+        "content_type": 7,
+        "codename": "delete_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view usuario",
+        "content_type": 7,
+        "codename": "view_usuario"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add eps",
+        "content_type": 8,
+        "codename": "add_eps"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change eps",
+        "content_type": 8,
+        "codename": "change_eps"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete eps",
+        "content_type": 8,
+        "codename": "delete_eps"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view eps",
+        "content_type": 8,
+        "codename": "view_eps"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add laboratorio",
+        "content_type": 9,
+        "codename": "add_laboratorio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change laboratorio",
+        "content_type": 9,
+        "codename": "change_laboratorio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete laboratorio",
+        "content_type": 9,
+        "codename": "delete_laboratorio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view laboratorio",
+        "content_type": 9,
+        "codename": "view_laboratorio"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add paciente",
+        "content_type": 10,
+        "codename": "add_paciente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change paciente",
+        "content_type": 10,
+        "codename": "change_paciente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete paciente",
+        "content_type": 10,
+        "codename": "delete_paciente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view paciente",
+        "content_type": 10,
+        "codename": "view_paciente"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add familiar",
+        "content_type": 11,
+        "codename": "add_familiar"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change familiar",
+        "content_type": 11,
+        "codename": "change_familiar"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete familiar",
+        "content_type": 11,
+        "codename": "delete_familiar"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view familiar",
+        "content_type": 11,
+        "codename": "view_familiar"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add medicamento",
+        "content_type": 12,
+        "codename": "add_medicamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change medicamento",
+        "content_type": 12,
+        "codename": "change_medicamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete medicamento",
+        "content_type": 12,
+        "codename": "delete_medicamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view medicamento",
+        "content_type": 12,
+        "codename": "view_medicamento"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add nacionalidad",
+        "content_type": 13,
+        "codename": "add_nacionalidad"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change nacionalidad",
+        "content_type": 13,
+        "codename": "change_nacionalidad"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete nacionalidad",
+        "content_type": 13,
+        "codename": "delete_nacionalidad"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view nacionalidad",
+        "content_type": 13,
+        "codename": "view_nacionalidad"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add cargo",
+        "content_type": 14,
+        "codename": "add_cargo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change cargo",
+        "content_type": 14,
+        "codename": "change_cargo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete cargo",
+        "content_type": 14,
+        "codename": "delete_cargo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view cargo",
+        "content_type": 14,
+        "codename": "view_cargo"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add fecha de dosis",
+        "content_type": 15,
+        "codename": "add_fechadedosis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change fecha de dosis",
+        "content_type": 15,
+        "codename": "change_fechadedosis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete fecha de dosis",
+        "content_type": 15,
+        "codename": "delete_fechadedosis"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view fecha de dosis",
+        "content_type": 15,
+        "codename": "view_fechadedosis"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$FCmK0Da495CiAg6MyPClVb$kfdOYIvr/WRJKkv8dElwegzoqxRH9e8PfuBqYnFzAZc=",
+        "last_login": "2022-12-05T20:27:48.765Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-12-04T00:53:56.375Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$Zt9xaidvihI13ZH3Wu1h0B$WvyabM8GJkTBNPj/YTRqDJTM1Hst9LxSesP1CEJFHDg=",
+        "last_login": "2022-12-04T15:40:38.405Z",
+        "is_superuser": false,
+        "username": "virginia",
+        "first_name": "",
+        "last_name": "",
+        "email": "adsi2374477@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-12-04T01:25:39.488Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$QqveqlXOuLnini0uFARF4E$VkrZRyICXIGQRs+vcIWyn+XJg9Rnz+O0YFNXpBHXDkk=",
+        "last_login": "2022-12-04T15:16:12.629Z",
+        "is_superuser": false,
+        "username": "carolina",
+        "first_name": "",
+        "last_name": "",
+        "email": "cacruz077@misena.edu.co",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-12-04T01:26:53.889Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$UJN8XFDtq4e9llyuHntiUQ$SAwYjLF98+pv639qS78Ewor2G0jxoX2qqkyphi2HqO8=",
+        "last_login": "2022-12-04T01:30:09.001Z",
+        "is_superuser": false,
+        "username": "andrea",
+        "first_name": "",
+        "last_name": "",
+        "email": "kalokru@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-12-04T01:29:49.832Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$EmcfTaCn9YAVvC0NM13lKc$aMSl5LgAOZ/0rqGCTvjgf2bMSZZY9A/76ummKNUCSGA=",
+        "last_login": "2022-12-05T21:26:12.822Z",
+        "is_superuser": false,
+        "username": "carlos",
+        "first_name": "",
+        "last_name": "",
+        "email": "kalokru@hotmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-12-04T15:31:48.709Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "usuarios",
+        "model": "usuario"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "eps",
+        "model": "eps"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "laboratorio",
+        "model": "laboratorio"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "paciente",
+        "model": "paciente"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "familiar",
+        "model": "familiar"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "medicamento",
+        "model": "medicamento"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "nacionalidad",
+        "model": "nacionalidad"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "cargo",
+        "model": "cargo"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "inicio",
+        "model": "fechadedosis"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "j0f3vkb314tvp0h0mvnv6t226jdi1moh",
+    "fields": {
+        "session_data": "eyJfcGFzc3dvcmRfcmVzZXRfdG9rZW4iOiJiZndsYjEtYTE5ZmFhYjE1M2ZkY2FhNDM3NDJlYjYyZTEwMzllNjMifQ:1p1r0m:R36eMEMbzn6XC0ulp8ACGt6Ifne8zS-BJ89VrX2xovw",
+        "expire_date": "2022-12-05T01:34:36.242Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "utady8qjnhxgypyrpl7m0ujagvlmne8l",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hB-BevSvWcg7wNSNZCUdmW8uyHpQrczk3mLCPtW4t7TGhcWF2HE6Zch0DPVIfgB9d4ktbqtC8qRyMN2eWucXtej_RsU6GVsic40K4XGWXSolXWUAxjHSJQtUNDAyCaFSWfFaU6KLE3kXfbgvRafLwFVOM4:1p1rG0:SVhL88dS111UlojiM2D4B7s6o8lRDuLxqb-CfzTFFOY",
+        "expire_date": "2022-12-05T01:50:20.672Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v8tpcn935rf5m5d9eodueuwn8mr4sba3",
+    "fields": {
+        "session_data": ".eJxVjEsOwiAUAO_C2hDg8fi4dN8zEF4BqRqalHZlvLsh6UK3M5N5sxCPvYaj5y0siV0Zsssvozg_cxsiPWK7r3xe274txEfCT9v5tKb8up3t36DGXsfWGISsc7HFgrBFSZ8JPZQC0jsZEylC4ZxJWjkRPaKXQMpqTQ41WPb5AsjkNqE:1p2J3o:qn8nYnMxSedPre0aKXWfF1daIdKbiNkRTyB5izbDTXY",
+        "expire_date": "2022-12-06T07:31:36.812Z"
+    }
+},
+{
+    "model": "usuarios.usuario",
+    "pk": 1,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "777464712",
+        "nombres": "Virginia",
+        "apellidos": "Álvarez",
+        "foto": "images/default.png",
+        "fecha_nacimiento": "1981-01-01",
+        "correo": "adsi2374477@gmail.com",
+        "eps": 2,
+        "celular": "1234578944444",
+        "telefono_familiar": "3216458711313",
+        "direccion": "carrera 39 # 1-50",
+        "ciudad": "Zipaquirá",
+        "cargo": 1,
+        "nacionalidad": 1,
+        "perfil": "admin",
+        "estado": "1",
+        "alias": "virginia",
+        "user": null,
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "usuarios.usuario",
+    "pk": 2,
+    "fields": {
+        "tipoDocumento": "C.E",
+        "numDocumento": "12345612555551",
+        "nombres": "Carolina",
+        "apellidos": "Jaramillo",
+        "foto": "images/default.png",
+        "fecha_nacimiento": "1990-03-01",
+        "correo": "cacruz077@misena.edu.co",
+        "eps": 4,
+        "celular": "3203768888",
+        "telefono_familiar": "32164587532",
+        "direccion": "carrera 11 # 1-55",
+        "ciudad": "Cajicá",
+        "cargo": 2,
+        "nacionalidad": 3,
+        "perfil": "usuario",
+        "estado": "1",
+        "alias": "carolina",
+        "user": null,
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "usuarios.usuario",
+    "pk": 3,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "1018233544",
+        "nombres": "Andrea",
+        "apellidos": "Castillo",
+        "foto": "images/default.png",
+        "fecha_nacimiento": "1984-07-03",
+        "correo": "kalokru@gmail.com",
+        "eps": 3,
+        "celular": "3203787836",
+        "telefono_familiar": "32164587",
+        "direccion": "calle 1 # 123-42",
+        "ciudad": "Chía",
+        "cargo": 2,
+        "nacionalidad": 1,
+        "perfil": "usuario",
+        "estado": "1",
+        "alias": "andrea",
+        "user": null,
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "usuarios.usuario",
+    "pk": 4,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "5454545",
+        "nombres": "Alonso",
+        "apellidos": "Torres",
+        "foto": "images/default.png",
+        "fecha_nacimiento": "1980-01-01",
+        "correo": "kalokru@hotmail.com",
+        "eps": 3,
+        "celular": "125454554",
+        "telefono_familiar": "454545",
+        "direccion": "calle 34 No. 98-14",
+        "ciudad": "Zipaquirá",
+        "cargo": 3,
+        "nacionalidad": 1,
+        "perfil": "usuario",
+        "estado": "1",
+        "alias": "carlos",
+        "user": null,
+        "fechaCreacion": "2022-12-04"
+    }
+},
+{
+    "model": "eps.eps",
+    "pk": 1,
+    "fields": {
+        "nombre": "Famisanar",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "eps.eps",
+    "pk": 2,
+    "fields": {
+        "nombre": "Sanitas",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "eps.eps",
+    "pk": 3,
+    "fields": {
+        "nombre": "Sura",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "eps.eps",
+    "pk": 4,
+    "fields": {
+        "nombre": "Nueva EPS",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "eps.eps",
+    "pk": 5,
+    "fields": {
+        "nombre": "Compensar",
+        "estado": "1",
+        "fechaCreacion": "2022-12-04"
+    }
+},
+{
+    "model": "laboratorio.laboratorio",
+    "pk": 1,
+    "fields": {
+        "nombre": "Merck",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "laboratorio.laboratorio",
+    "pk": 2,
+    "fields": {
+        "nombre": "MK",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "laboratorio.laboratorio",
+    "pk": 3,
+    "fields": {
+        "nombre": "Genfar",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "laboratorio.laboratorio",
+    "pk": 4,
+    "fields": {
+        "nombre": "Bayer",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "laboratorio.laboratorio",
+    "pk": 5,
+    "fields": {
+        "nombre": "Sanofi",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 1,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "123456127676",
+        "nombres": "Pedro",
+        "apellidos": "Muñoz",
+        "fechaNacimiento": "1940-01-01",
+        "genero": "M",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2020-01-01",
+        "eps": 1,
+        "familiar": 1,
+        "nacionalidad": 1,
+        "observaciones": "Ninguna",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 2,
+    "fields": {
+        "tipoDocumento": "C.E",
+        "numDocumento": "12345612999",
+        "nombres": "Luis",
+        "apellidos": "Leon",
+        "fechaNacimiento": "1939-01-01",
+        "genero": "M",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2021-01-01",
+        "eps": 2,
+        "familiar": 2,
+        "nacionalidad": 2,
+        "observaciones": "Ingresa con una silla de ruedas",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 3,
+    "fields": {
+        "tipoDocumento": "PST",
+        "numDocumento": "12345612333443387",
+        "nombres": "Mario",
+        "apellidos": "García",
+        "fechaNacimiento": "1938-01-01",
+        "genero": "M",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2022-01-01",
+        "eps": 3,
+        "familiar": 3,
+        "nacionalidad": 8,
+        "observaciones": "Require oxígeno constante",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 4,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "123456127777",
+        "nombres": "Juana",
+        "apellidos": "Gutierrez",
+        "fechaNacimiento": "1935-01-01",
+        "genero": "F",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2020-01-01",
+        "eps": 4,
+        "familiar": 4,
+        "nacionalidad": 1,
+        "observaciones": "Ninguna",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 5,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "252544887",
+        "nombres": "Mercedes",
+        "apellidos": "Torres",
+        "fechaNacimiento": "1945-01-01",
+        "genero": "F",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2022-05-01",
+        "eps": 1,
+        "familiar": 5,
+        "nacionalidad": 1,
+        "observaciones": "Ninguna",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "paciente.paciente",
+    "pk": 6,
+    "fields": {
+        "tipoDocumento": "C.E",
+        "numDocumento": "12365874447",
+        "nombres": "Carlos",
+        "apellidos": "Cruz",
+        "fechaNacimiento": "1950-01-01",
+        "genero": "M",
+        "tipoNovedad": "Ingreso",
+        "fechaNovedad": "2022-12-04",
+        "eps": 2,
+        "familiar": 3,
+        "nacionalidad": 3,
+        "observaciones": "Necesita oxígeno 24 horas",
+        "estado": "1",
+        "fechaCreacion": "2022-12-04"
+    }
+},
+{
+    "model": "familiar.familiar",
+    "pk": 1,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "12345612",
+        "nombres": "Paola",
+        "apellidos": "Muñoz",
+        "celular": "55551111",
+        "celular2": "52345235",
+        "telefono_domicilio": "52262435",
+        "correo": "paola@gmail.com",
+        "direccion": "carrera 17 # 33-14",
+        "ciudad": "Zipaquirá",
+        "nacionalidad": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "familiar.familiar",
+    "pk": 2,
+    "fields": {
+        "tipoDocumento": "C.E",
+        "numDocumento": "12345612333",
+        "nombres": "Liliana",
+        "apellidos": "Leon",
+        "celular": "3203768030",
+        "celular2": "5324555555",
+        "telefono_domicilio": "52262435",
+        "correo": "liliana@gmail.com",
+        "direccion": "calle 14 # 12-19",
+        "ciudad": "Cajicá",
+        "nacionalidad": 2,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "familiar.familiar",
+    "pk": 3,
+    "fields": {
+        "tipoDocumento": "PST",
+        "numDocumento": "1234561233344",
+        "nombres": "Marcela",
+        "apellidos": "García",
+        "celular": "3203768033",
+        "celular2": "532455554",
+        "telefono_domicilio": "5254325633",
+        "correo": "marcela@gmail.com",
+        "direccion": "carrera 30 # 1-50",
+        "ciudad": "Bogotá",
+        "nacionalidad": 8,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "familiar.familiar",
+    "pk": 4,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "12345612111",
+        "nombres": "John",
+        "apellidos": "Gómez",
+        "celular": "33434334343",
+        "celular2": "4443333434",
+        "telefono_domicilio": "44343322111",
+        "correo": "john@gmail.com",
+        "direccion": "calle 1 # 123-42",
+        "ciudad": "Chía",
+        "nacionalidad": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "familiar.familiar",
+    "pk": 5,
+    "fields": {
+        "tipoDocumento": "C.C",
+        "numDocumento": "887766563",
+        "nombres": "Horacio",
+        "apellidos": "Jaramillo",
+        "celular": "3203768055",
+        "celular2": "5234523541",
+        "telefono_domicilio": "4434333",
+        "correo": "horacio@gmail.com",
+        "direccion": "carrera 27 # 43-18",
+        "ciudad": "Bogotá",
+        "nacionalidad": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 1,
+    "fields": {
+        "paciente": 1,
+        "nombre": "Acetaminofén",
+        "presentacion": "Pastillas",
+        "pesoBase": "500",
+        "medida": "mg",
+        "laboratorio": 1,
+        "stock": 41,
+        "dosis": 3,
+        "frecuencia": "8",
+        "observaciones": "Después de comidas",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:19:14.344Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 2,
+    "fields": {
+        "paciente": 1,
+        "nombre": "Quetiapina",
+        "presentacion": "Pastillas",
+        "pesoBase": "50",
+        "medida": "mg",
+        "laboratorio": 2,
+        "stock": 4,
+        "dosis": 1,
+        "frecuencia": "24",
+        "observaciones": "Antes de dormir",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 1,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-05T19:58:14.853Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 3,
+    "fields": {
+        "paciente": 1,
+        "nombre": "Omeprazol",
+        "presentacion": "Cápsulas",
+        "pesoBase": "50",
+        "medida": "mg",
+        "laboratorio": 3,
+        "stock": 0,
+        "dosis": 1,
+        "frecuencia": "12",
+        "observaciones": "Tomar con comidas",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:21:32.072Z",
+        "alerta": 1,
+        "estado": "0",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 4,
+    "fields": {
+        "paciente": 2,
+        "nombre": "Acetaminofén",
+        "presentacion": "Pastillas",
+        "pesoBase": "1000",
+        "medida": "mg",
+        "laboratorio": 5,
+        "stock": 42,
+        "dosis": 1,
+        "frecuencia": "8",
+        "observaciones": "Ninguna",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:22:12.365Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 5,
+    "fields": {
+        "paciente": 3,
+        "nombre": "Ibuprofeno",
+        "presentacion": "Grageas",
+        "pesoBase": "500",
+        "medida": "mg",
+        "laboratorio": 2,
+        "stock": 2,
+        "dosis": 1,
+        "frecuencia": "24",
+        "observaciones": "Suministrar en las horas de la mañana",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 1,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-05T20:33:55.923Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 6,
+    "fields": {
+        "paciente": 4,
+        "nombre": "Bisolvon",
+        "presentacion": "Jarabe",
+        "pesoBase": "5",
+        "medida": "ml",
+        "laboratorio": 3,
+        "stock": 95,
+        "dosis": 5,
+        "frecuencia": "12",
+        "observaciones": "Ninguna",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:21:51.563Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 7,
+    "fields": {
+        "paciente": 4,
+        "nombre": "Naproxeno",
+        "presentacion": "Pastillas",
+        "pesoBase": "500",
+        "medida": "mg",
+        "laboratorio": 4,
+        "stock": 5,
+        "dosis": 1,
+        "frecuencia": "12",
+        "observaciones": "Ninguna",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:17:54.301Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 8,
+    "fields": {
+        "paciente": 5,
+        "nombre": "Omeprazol",
+        "presentacion": "Cápsulas",
+        "pesoBase": "100",
+        "medida": "mg",
+        "laboratorio": 5,
+        "stock": 15,
+        "dosis": 2,
+        "frecuencia": "12",
+        "observaciones": "Ninguna",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T01:18:35.099Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "medicamento.medicamento",
+    "pk": 9,
+    "fields": {
+        "paciente": 6,
+        "nombre": "Omeprazol",
+        "presentacion": "Cápsulas",
+        "pesoBase": "20",
+        "medida": "mg",
+        "laboratorio": 4,
+        "stock": 9,
+        "dosis": 1,
+        "frecuencia": "24",
+        "observaciones": "En ayunas",
+        "profesional_salud": "EPS",
+        "consumoDiario": 0,
+        "contador": 0,
+        "fechaDosis": "2022-12-05",
+        "ultimaDosis": "2022-12-04T15:22:51.888Z",
+        "alerta": 1,
+        "estado": "1",
+        "fechaCreacion": "2022-12-04"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 1,
+    "fields": {
+        "nombre": "Colombia",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 2,
+    "fields": {
+        "nombre": "Ecuador",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 3,
+    "fields": {
+        "nombre": "Venezuela",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 4,
+    "fields": {
+        "nombre": "Bolivia",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 5,
+    "fields": {
+        "nombre": "Brasil",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 6,
+    "fields": {
+        "nombre": "Argentina",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 7,
+    "fields": {
+        "nombre": "Chile",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "nacionalidad.nacionalidad",
+    "pk": 8,
+    "fields": {
+        "nombre": "Paraguay",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "cargo.cargo",
+    "pk": 1,
+    "fields": {
+        "nombre": "Enfermer@ Jefe",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "cargo.cargo",
+    "pk": 2,
+    "fields": {
+        "nombre": "Enfermer@ auxiliar",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+},
+{
+    "model": "cargo.cargo",
+    "pk": 3,
+    "fields": {
+        "nombre": "Practicante",
+        "estado": "1",
+        "fechaCreacion": "2022-12-03"
+    }
+}
+]

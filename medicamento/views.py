@@ -45,7 +45,7 @@ def medicamento(request):
         'urlCrear': 'crear/',
         'urlListar': 'listar/',
         'fecha': fechaContador,
-        'alerta': medicamento.alerta
+        #'alerta': medicamento.alerta
     }
     return render(request, 'medicamentos/medicamentos.html', context)
 
