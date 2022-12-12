@@ -6,6 +6,16 @@ body {
     /* background: #259ad4; */
 }
 
+.error-login {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #e6717c;
+}
+
 .login-box {
     background: rgba(242, 240, 240, 0.8);
     
@@ -57,6 +67,7 @@ body {
     .intro {
         height: auto;
     }
+
 }
 
 @media (max-width: 991px) {

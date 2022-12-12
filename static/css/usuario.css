@@ -700,4 +700,8 @@ tbody tr td {
         
     }
 
+    .lista_link {
+        width: 200px;
+    }
+
 }

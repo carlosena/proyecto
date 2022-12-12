@@ -15,17 +15,26 @@
 <section class="intro">
     <div class="mask d-flex align-items-center h-90 gradient-custom">
         <div class="container">
+            
             <div class="row justify-content-center">
+                
                 <div class="col-12 col-xl-10">
                     <div class="card  login-box">
+                        
                         <div class="card-body p-5">
                             <div class="row d-flex align-items-center">
+                                {% if form.errors %}
+                                    <p class="row justify-content-center error-login">Su Usuario o clave no coinciden, por favor intente de nuevo.</p>
+                                    <p class="row justify-content-center error-login">Si requiere asistencia contacte al administrador del sistema.</p>
+                                {% endif %}
                                 <div class="col-md-6 col-xl-7">
                                     <div class="text-center pt-md-5 pb-5 my-md-5">
                                         <img class="logo-inicio" src="{% static 'img/logoSML.svg' %}" alt="Logo de la empresa" />
                                     </div>
                                 </div>
                                 
+                               
+
                                 <form method="POST" class="col-md-6 col-xl-4 text center ">
 
                                     {% csrf_token %}
