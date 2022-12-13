@@ -5,6 +5,8 @@ from medicamento.forms import MedicamentoForm
 from medicamento.models import Medicamento
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+import sys
+from django.core.management import call_command
 
 # Create your views here.
 
@@ -24,10 +26,17 @@ def medicamento(request):
             fechaContador = medicamento.fechaDosis
             medicamento.consumoDiario = int(24 / int(medicamento.frecuencia))
             medicamento.alerta = int(4 * medicamento.consumoDiario)
-            
-    
+
+       
 
     hoy = datetime.date.today()
+
+    if fechaContador != hoy:         
+        sysout = sys.stdout
+        sys.stdout = open('db.json','w',1,'utf-8')    
+        call_command('dumpdata')    
+        sys.stdout = sysout  
+        messages.success(request, 'Respaldo diario base de datos correcto.')  
 
     hora = datetime.datetime.now()
     print('arriba', hora)
