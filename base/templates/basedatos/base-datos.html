@@ -1,0 +1,74 @@
+{% extends 'partials/app.html' %}
+{% load static %}
+
+{% block contenido %} 
+    {% include 'partials/sidebar.html' %}
+    
+
+<section id="interface">
+
+    {% include 'partials/nav-app.html' %}
+
+    <div class="container">
+
+        <div class="w-75 m-auto border-top border-3 borde pt-5" id="">
+            <h3 class="mb-5 fs-2 titulo-db">Respaldar la Base de Datos<span> </span></h3>
+            
+            <a class="boton-db boton-aceptar p-3 mb-3" data-bs-toggle="modal" data-bs-target="#respaldarBD"><label for="btn-modal">Respaldar</label></a>
+        </div>
+
+        <div class="w-75 m-auto borde pt-5" id="">
+            <h3 class="mb-5 fs-2 titulo-db">Recuperar la Base de Datos<span> </span></h3>
+            
+            <a class="boton-db boton-aceptar p-3 mb-3" data-bs-toggle="modal" data-bs-target="#recuperarBD"><label for="btn-modal">Recuperar</label></a>
+        </div>
+                             
+    </div>
+
+    <!-- Modal Respaldar --> 
+    
+    <div class="modal fade" id="respaldarBD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RESPALDAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Desea respaldar la actual Base de Datos?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                <a href="{% url 'respaldarbd' %}"  class="btn boton-aceptar boton">Respaldar</a>
+            </div>
+        </div>
+        </div>
+    </div>     
+    <!-- fin modal respaldar-->
+
+    <!-- Modal Recuperar --> 
+    
+    <div class="modal fade" id="recuperarBD" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RECUPERAR</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ¿Desea recuperar la última Base de Datos?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn boton-cancelar" data-bs-dismiss="modal">Cancelar</button>
+                <a href="{% url 'recuperarbd' %}"  class="btn boton-aceptar boton">Recuperar</a>
+            </div>
+        </div>
+        </div>
+    </div>     
+    <!-- fin modal recuperar-->
+
+
+
+</section>
+
+{% endblock contenido %} 

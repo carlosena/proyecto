@@ -611,6 +611,17 @@ tbody tr td {
 }
 
 
+/* Botones base de datos */
+.boton-db {
+    border-radius: 5px;
+}
+
+.titulo-db {
+    color: #e6717c;
+}
+
+
+
 @media (max-width: 820px) {
 
     #menu {  

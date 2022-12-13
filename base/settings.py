@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'django_cron',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -57,8 +58,15 @@ INSTALLED_APPS = [
     'formula',
     'nacionalidad',
     'cargo',
-    'inicio'
+    'inicio',
+    'basedatos',
 ]
+
+REST_FRAMEWORK = {
+  'DEFAULT_PERMISSION_CLASSES': [
+      'rest_framework.permissions.AllowAny',
+  ],
+}
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"

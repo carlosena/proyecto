@@ -103,8 +103,10 @@ def usuarios_eliminar(request, pk):
     )    
     return redirect('usuarios')
 
+
 @login_required
 def manual(request):
+    #return redirect("/download/file.pdf")
     titulo = 'Manual Usuario'
     context = {
         'titulo': titulo

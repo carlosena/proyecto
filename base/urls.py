@@ -32,6 +32,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', inicio, name = 'inicio'),
+    path('base-datos/', include('basedatos.urls')),
     path('inicioSesion/', include('inicioSesion.urls')),
     path('usuarios/', include('usuarios.urls')),
     path('eps/', include('eps.urls')),
